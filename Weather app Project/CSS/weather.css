@@ -1,0 +1,101 @@
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;   /* will not show border internal outline when clicked */
+            font-family: sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+
+        .container{
+            width: 400px;
+            height: min-content; /* will automatically take height for content */
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+
+        }
+
+        .search-box{
+            width: 100%;
+            height: min-content;
+            border-radius: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .search-box input{
+            width: 85%;
+            font-size: 20px;
+            text-transform:capitalize ;
+            color: #000;
+            background-color:rgb(213, 231, 239);
+            padding: 0.50rem 1rem;
+            border-radius: 1rem;
+        }
+
+        .search-box input::placeholder{
+            color: #000;  
+        }
+        .search-box button{
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background-color: rgb(213, 231, 239);
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .search-box button:hover{
+            color: #fff;
+            background-color: rgb(116, 131, 137);
+        }
+
+        .weather-body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-block:20px;
+
+        }
+
+        .weather-body img{
+            width: 60%;
+        }
+
+        .weather-box{
+            margin-block: 20px;   /* Top and bottom margin shorthand */
+            text-align: center;
+        }
+
+        .weather-box .temperature{
+            font-size: 2.2rem;
+            font-weight:800;
+            position: relative;
+        }
+
+        .weather-box .temperature sup{
+            font-size: 1.2rem;
+            position: absolute;
+            font-weight: 600;
+        }
+
+        .weather-box .description{
+            font-size: 1.3rem;
+            font-weight: 500;
+            text-transform: capitalize;
+          
+        }
+
+        

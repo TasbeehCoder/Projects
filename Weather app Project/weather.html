@@ -6,17 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Weather app Project </title>
     <!-- CSS file link -->
-    <link rel="stylesheet" href="/CSS/weather.css">
+    <link rel="stylesheet" href="/Weather app Project/CSS/weather.css">
+    <!-- Font awesome Kit Link -->
+    <script src="https://kit.fontawesome.com/9ee2fef312.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="header">
-        <div class="container">
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter Your Location" class="input-box">
+
+                <button type="button" class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+
+        <div class="weather-body">
+            <img src="/Weather app Project/images/cloud.png" alt="Cloudy" class="cloud-img">
+            <!-- Weather box -->
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <P class="description">light rain</P>
+            </div>
+            <!-- Weather details -->
+            <div class="weather-details">
+                <div class="humadity">
+                    <img src="/Weather app Project/images/icons8-humidity-16.png" alt="">
+                </div>
+            </div>
 
         </div>
     </div>
-
-
 
     <!-- Weather Project -->
     <script src="weather.js"></script>
