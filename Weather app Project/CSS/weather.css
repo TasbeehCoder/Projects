@@ -62,7 +62,7 @@
         }
 
         .weather-body{
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -98,4 +98,62 @@
           
         }
 
+        /* Weather Details */
+        .weather-details{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        .humidity, .wind{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .humidity{
+            margin-left: 1.2rem;
+            /* width: 50rem; */
+        }
+
         
+        .wind{
+            margin-right: 1rem;
+        }
+        .weather-details .wind-img{
+            width: 3rem;
+            height: 2.5rem;
+        }
+        .humidity-img{
+            height: 4rem;
+        }
+    
+        .weather-details .text{
+            margin-left: 10px;
+            font-size: 1rem;
+        }
+        
+        .text span{
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        
+
+        .location_not_found{
+            width: 100%;
+            margin-top: 2rem;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+                
+        }
+        .location_not_found h1{
+            font-size: 1rem;
+            color: rgb(171, 168, 168);
+            margin-block-end: 1rem;
+            
+        }
+        .location_not_found img{
+            width: 80%;
+        }

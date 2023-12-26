@@ -17,12 +17,20 @@
             <div class="search-box">
                 <input type="text" placeholder="Enter Your Location" class="input-box">
 
-                <button type="button" class="fa-solid fa-magnifying-glass"></button>
+                <button type="button" class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
             </div>
         </div>
 
+        <!-- for error when location not found -->
+        <div class="location_not_found">
+            <h1>Sorry Your location Not found !!</h1>
+            <img src="/Weather app Project/images/icons8-error-100.png" alt="Error 404">
+        </div>
+
+
+
         <div class="weather-body">
-            <img src="/Weather app Project/images/cloud.png" alt="Cloudy" class="cloud-img">
+            <img src="/Weather app Project/images/cloud.png" alt="Cloudy" class="weather-img">
             <!-- Weather box -->
             <div class="weather-box">
                 <p class="temperature">0 <sup>°C</sup></p>
@@ -30,16 +38,30 @@
             </div>
             <!-- Weather details -->
             <div class="weather-details">
-                <div class="humadity">
-                    <img src="/Weather app Project/images/icons8-humidity-16.png" alt="">
+                <div class="humidity">
+                    <img class="humidity-img" src="/Weather app Project/images/icons8-humidity-48.png" alt="">
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
                 </div>
+                <!-- Wind speed -->
+                <div class="wind">
+                    <img src="/Weather app Project/images/windicss.svg" alt="" class="wind-img">
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind Speed</p>
+
+                    </div>
+
+
+                </div>
+
             </div>
-
         </div>
-    </div>
 
-    <!-- Weather Project -->
-    <script src="weather.js"></script>
+        <!-- Weather Project -->
+        <script src="weather.js"></script>
 </body>
 
 </html>
